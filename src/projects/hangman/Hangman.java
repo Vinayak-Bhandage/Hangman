@@ -41,14 +41,13 @@ public class Hangman {
         Logo logo = new Logo();
         Scanner in = new Scanner(System.in);
         String visited = "";
-        String movie_name = hangman_movie;
         int count = 0, res = 0, lifes = 1;
-        for(int i = 0; i < movie_name.length(); i++) {
-            if(movie_name.charAt(i) == ' '){
+        for(int i = 0; i < hangman_movie.length(); i++) {
+            if(hangman_movie.charAt(i) == ' '){
                 count++;
             }
         }
-        count = movie_name.length() - count;
+        count = hangman_movie.length() - count;
 
         while(count > 0 && lifes != 7) {
             char c = in.next().toUpperCase().charAt(0);
@@ -57,7 +56,7 @@ public class Hangman {
             }
             else {
                 visited += c;
-                if (movie_name.indexOf(c) >= 0) {
+                if (hangman_movie.indexOf(c) >= 0) {
                     res = updateArray(hangman_movie, arr, c);
                     count -= res;
                 }
