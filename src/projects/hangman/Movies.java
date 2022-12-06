@@ -2,6 +2,7 @@ package projects.hangman;
 
 import java.util.Random;
 
+// All the names of the movies which will be given randomly when the function ReturnsMovie is called.
 public class Movies {
     public String returnsMovie() {
         String[] movielist = {"The Shawshank Redemption", "The Godfather", "The Dark Knight",
@@ -13,7 +14,10 @@ public class Movies {
                 "The Exorcist", "Slumdog Millionaire", "Howl's Moving Castle", "Kick Ass", "The Sixth Sense",
                 "Forrest Gump"};
 
+        // Random number generator
         Random random = new Random();
+
+        // Selecting random number from 0 to arrays length.
         int r = random.nextInt(0, movielist.length-1);
         return movielist[r];
     }
