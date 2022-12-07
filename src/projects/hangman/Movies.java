@@ -2,8 +2,16 @@ package projects.hangman;
 
 import java.util.Random;
 
-// All the names of the movies which will be given randomly when the function ReturnsMovie is called.
+/**
+ * <li>All the names of the movies which will be given randomly when the function ReturnsMovie is called.</li>
+ */
 public class Movies {
+
+
+    /**
+     * <li>Call this method to get a random movie name.</li>
+     * @return A string which is a random movie name from the array movie list.
+     */
     public String returnsMovie() {
         String[] movielist = {"The Shawshank Redemption", "The Godfather", "The Dark Knight",
                 "Pulp Fiction", "Spiderman", "Amelie", "The Hangover", "The Amityville Horror", "Jaws",

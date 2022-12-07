@@ -1,11 +1,20 @@
 package projects.hangman;
 
-// Ascii art logo will be returned by this class based on the life remaining.
-// It showcases the Hangman dying ascii art.
-// Also returns whether we won or lost the game.
+/**
+ * <li> Ascii art logo will be returned by this class based on the life remaining.</li>
+ * <li>It showcases the Hangman dying ascii art.</li>
+ * <li>Also returns whether we won or lost the game.</li>
+ *
+ */
 public class Logo {
+
+    /**
+     * <li>Prints ascii art based on the life.</li>
+     * <li>If game ends or wins it prints the respective ascii art.</li>
+     * @param lifes int parameter.
+     */
     void returnsLogo(int lifes) {
-        switch(lifes) {
+        switch(lifes) { // Select the case based on life and prints ascii art.
             case 1:
                 System.out.println("   _____ \n" +
                         "  |      \n" +
